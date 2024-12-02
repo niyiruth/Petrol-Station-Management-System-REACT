@@ -1,0 +1,224 @@
+.dashboard-page {
+  --primary-color: #2b6cb0;
+  --secondary-color: #38a169;
+  --accent-color: #d69e2e;
+  --gradient-1: linear-gradient(135deg, #2b6cb0, #4299e1);
+  --gradient-2: linear-gradient(135deg, #38a169, #48bb78);
+  --gradient-3: linear-gradient(135deg, #d69e2e, #ecc94b);
+  --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .navbar {
+    background: var(--gradient-1);
+    box-shadow: var(--card-shadow);
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navbar-brand img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    margin: 0 0.2rem;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .stats-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .stats-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+
+  .stats-card:nth-child(1) .stats-icon {
+    background: var(--gradient-1);
+  }
+  .stats-card:nth-child(2) .stats-icon {
+    background: var(--gradient-2);
+  }
+  .stats-card:nth-child(3) .stats-icon {
+    background: var(--gradient-3);
+  }
+
+  .player-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(10px);
+  }
+
+  .card-header {
+    background: var(--gradient-1);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(247, 250, 252, 0.8);
+  }
+
+  .info-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-1);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+
+  .profile-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+  }
+
+  .profile-picture-card {
+    width: 250px;
+    margin: 1rem 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+  }
+
+  .profile-picture-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-picture-card img:hover {
+    transform: scale(1.05);
+  }
+
+  .upload-form {
+    background: rgba(247, 250, 252, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+  }
+
+  .form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .btn-primary {
+    background: var(--gradient-1);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(43, 108, 176, 0.3);
+  }
+
+  .alert {
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .alert-success {
+    background-color: rgba(198, 246, 213, 0.9);
+    color: #2f855a;
+  }
+
+  .alert-danger {
+    background-color: rgba(254, 215, 215, 0.9);
+    color: #c53030;
+  }
+
+  .dropdown-menu {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: none;
+    box-shadow: var(--card-shadow);
+  }
+
+  .dropdown-item {
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(66, 153, 225, 0.1);
+    transform: translateX(5px);
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    .stats-card {
+      margin-bottom: 1rem;
+    }
+
+    .profile-picture-card {
+      width: 100%;
+    }
+  }
+}

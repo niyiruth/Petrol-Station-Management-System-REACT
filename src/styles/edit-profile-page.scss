@@ -1,0 +1,88 @@
+.edit-profile-page {
+  background-color: #f4f7fc;
+  font-family: "Roboto", sans-serif;
+
+  /* Navbar Styling */
+  .navbar {
+    background: linear-gradient(90deg, #2c5282, #4299e1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    margin-left: 15px;
+  }
+
+  .nav-link:hover {
+    color: #a0aec0 !important;
+  }
+
+  /* Card Styling */
+  .card {
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+
+  .card-header {
+    background-color: #2c5282;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  /* Form Styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: #2c5282;
+  }
+
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #2c5282;
+  }
+
+  /* Button Styling */
+  .btn-primary {
+    background-color: #2c5282;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #234669;
+  }
+
+  .btn-secondary {
+    background-color: #a0aec0;
+    border: none;
+  }
+
+  .btn-secondary:hover {
+    background-color: #718096;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .card {
+      margin-top: 20px;
+    }
+  }
+}
